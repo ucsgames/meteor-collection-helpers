@@ -1,9 +1,9 @@
 Package.describe({
-    name: "ephemer:collection-helpers",
+    name: "collection-helpers",
     summary: "Transform Collections with self-defined helpers. Works with TAPi18n & other self-defined transforms!",
-    version: "1.1.0",
+    version: "1.2.0",
     documentation: "README.md",
-    git: "https://github.com/ephemer/meteor-collection-helpers.git",
+    git: "https://github.com/ucsgames/meteor-collection-helpers.git",
 });
 
 Package.onUse(function(api) {
@@ -22,6 +22,6 @@ Package.onTest(function(api) {
         'tinytest',
         'underscore',
         'mongo',
-        'ephemer:collection-helpers']);
+        'collection-helpers']);
     api.addFiles('collection-helpers_tests.js');
 });
