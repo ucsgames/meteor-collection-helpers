@@ -19,6 +19,6 @@ Package.onTest(function(api) {
     'tinytest',
     'underscore',
     'mongo',
-    'dburles:collection-helpers']);
+    'ucsgames:collection-helpers']);
   api.addFiles('collection-helpers_tests.js');
 });

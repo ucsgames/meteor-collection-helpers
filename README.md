@@ -5,7 +5,7 @@ Collection helpers automatically sets up a transformation on your collections us
 ## Installation
 
 ```sh
-$ meteor add ephemer:collection-helpers
+$ meteor add ucsgames:collection-helpers
 ```
 
 ## Usage
