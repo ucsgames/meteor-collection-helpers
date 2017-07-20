@@ -1,5 +1,5 @@
 Package.describe({
-    name: "collection-helpers",
+    name: "ucsgames:collection-helpers",
     summary: "Transform Collections with self-defined helpers. Works with TAPi18n & other self-defined transforms!",
     version: "1.2.0",
     documentation: "README.md",
@@ -7,21 +7,18 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-    api.versionsFrom('1.2.0.2');
+    api.versionsFrom('1.4.2');
     api.use([
-        'ecmascript',
         'underscore',
         'mongo']);
-
     api.addFiles('collection-helpers.js');
 });
 
 Package.onTest(function(api) {
-    api.use([
-        'ecmascript',
-        'tinytest',
-        'underscore',
-        'mongo',
-        'collection-helpers']);
-    api.addFiles('collection-helpers_tests.js');
+  api.use([
+    'tinytest',
+    'underscore',
+    'mongo',
+    'dburles:collection-helpers']);
+  api.addFiles('collection-helpers_tests.js');
 });
